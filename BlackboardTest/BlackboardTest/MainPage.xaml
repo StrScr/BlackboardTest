@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BlackboardTest"
+             x:Class="BlackboardTest.MainPage">
+
+    <StackLayout>
+        <Label Text="Blackboard Test
+               Por Oscar Mejía" 
+           HorizontalOptions="Center"/>
+        <Entry x:Name="userMail" Text="" Placeholder="Correo Electrónico"
+               Keyboard="Email" ReturnType="Next" Completed="userMail_Completed" />
+        <Entry x:Name="userPass" Text="" Placeholder="Contraseña"
+               IsPassword="True" ReturnType="Go" Completed="LogIn" />
+        <Button Text="Iniciar Sesión" Clicked="LogIn" />
+        <Label x:Name="result" Text="Esperando entrada de usuario."
+               HorizontalOptions="Center" HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
